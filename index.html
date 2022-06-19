@@ -1,0 +1,118 @@
+<html lang="pt" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive SideBar Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fluent UI CDN Link -->
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="ms-Fabric">
+
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class="ms-Icon ms-Icon--Code"></i>
+                <!-- Title menu -->
+                <div class="logo_name">Personal Store</div>
+            </div>
+            <i class="ms-Icon ms-Icon--CollapseMenu" id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="#">
+                    <i class="ms-Icon ms-Icon--WaffleOffice365"></i>
+                    <span class="links_name">Gallery</span>
+                </a>
+                <span class="tooltip">Gallery</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="ms-Icon ms-Icon--Contact"></i>
+                    <span class="links_name">About</span>
+                </a>
+                <span class="tooltip">About</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="ms-Icon ms-Icon--Chat"></i>
+                    <span class="links_name">Client Orders</span>
+                </a>
+                <span class="tooltip">Client Orders</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="ms-Icon ms-Icon--PieDouble"></i>
+                    <span class="links_name">Analytics</span>
+                </a>
+                <span class="tooltip">Analytics</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="ms-Icon ms-Icon--FabricFolder"></i>
+                    <span class="links_name">Order Online</span>
+                </a>
+                <span class="tooltip">Order Online</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="ms-Icon ms-Icon--ShoppingCart"></i>
+                    <span class="links_name">Order</span>
+                </a>
+                <span class="tooltip">Order</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="ms-Icon ms-Icon--Heart"></i>
+                    <span class="links_name">Saved</span>
+                </a>
+                <span class="tooltip">Saved</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="ms-Icon ms-Icon--Settings"></i>
+                    <span class="links_name">Settings</span>
+                </a>
+                <span class="tooltip">Settings</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="img/mesmer_mirage.png" alt="">
+                    <div class="name_job">
+                        <div class="name">Abdirahim Hussein</div>
+                        <div class="job">Burger store</div>
+                    </div>
+                </div>
+                <i class="ms-Icon ms-Icon--SignOut" id="log_out"></i>
+            </div>
+        </div>
+    </div>
+    <div class="home_content">
+        <!-- Content home principal page -->
+        <div class="text">Burger store</div>
+      <div>
+        <img id="image" style="width:600px;height:250px; border-radius: 4px; padding: 5px;"></img>
+<button id="prev">&#8592;</button>
+<button id="next">&#8594;</button>   
+    </div>
+    <script src="main.js"></script>
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".ms-Icon--Search");
+
+        btn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+
+        searchBtn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>
